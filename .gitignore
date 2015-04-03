@@ -1,0 +1,8 @@
+null
+.idea
+.project
+.classpath
+.settings
+.idea/
+*.iml
+config.properties
