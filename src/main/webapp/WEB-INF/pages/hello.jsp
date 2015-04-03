@@ -5,40 +5,6 @@
 <html>
 <body>
 
-<script src="/resources/scripts/jquery-1.8.3.min.js"></script>
-
-<script>
-
-    $( document ).ready(function() {
-
-        function clearAll() {
-            $( "#footer" ).hide();
-            $( "#header" ).hide();
-            $( "#both" ).hide();
-        }
-
-        $( "#footer" ).click(function( event ) {
-            clearAll();
-            $( "#both" ).show();
-        });
-
-        $( "#header" ).click(function( event ) {
-            clearAll();
-            $( "#footer" ).show();
-        });
-
-        $( "#both" ).click(function( event ) {
-            clearAll();
-            $( "#header" ).show();
-        });
-
-    });
-
-</script>
-
-
-
-
 <h1>${message}</h1>
 
 <div id="footer">
@@ -51,5 +17,7 @@
     <a id="both_link" href="#">Both</a>
 </div>
 
+<script src="resources/scripts/jquery-1.8.3.min.js"></script>
+<script src="resources/scripts/coins.js"></script>
 </body>
 </html>
