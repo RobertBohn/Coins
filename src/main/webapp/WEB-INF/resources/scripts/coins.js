@@ -1,24 +1,46 @@
 $( document ).ready(function() {
 
     function clearAll() {
-        $( "#footer" ).hide();
-        $( "#header" ).hide();
         $( "#both" ).hide();
+        $( "#obverse" ).hide();
+        $( "#reverse" ).hide();
+        $( "#obverse_slab" ).hide();
+        $( "#reverse_slab" ).hide();
     }
 
-    $( "#footer" ).click(function( event ) {
+    $( "#small_obv" ).click(function( event ) {
+        clearAll();
+        $( "#obverse" ).show();
+    });
+
+    $( "#small_rev" ).click(function( event ) {
+        clearAll();
+        $( "#reverse" ).show();
+    });
+
+    $( "#obverse" ).click(function( event ) {
+        clearAll();
+        $( "#reverse" ).show();
+    });
+
+    $( "#reverse" ).click(function( event ) {
         clearAll();
         $( "#both" ).show();
     });
 
-    $( "#header" ).click(function( event ) {
+    $( "#ngc" ).click(function( event ) {
         clearAll();
-        $( "#footer" ).show();
+        $( "#obverse_slab" ).show();
     });
 
-    $( "#both" ).click(function( event ) {
+    $( "#obverse_slab" ).click(function( event ) {
         clearAll();
-        $( "#header" ).show();
+        $( "#reverse_slab" ).show();
+    });
+
+    $( "#reverse_slab" ).click(function( event ) {
+        clearAll();
+        $( "#both" ).show();
     });
 
 });
