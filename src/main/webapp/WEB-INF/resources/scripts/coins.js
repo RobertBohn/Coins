@@ -2,6 +2,7 @@ $( document ).ready(function() {
 
     function selectView( view ) {
         $( "#both" ).hide();
+        $( "#main_notes" ).hide();
         $( "#obverse" ).hide();
         $( "#reverse" ).hide();
         $( "#obverse_slab" ).hide();
@@ -52,10 +53,40 @@ $( document ).ready(function() {
         $( "#small_rev" ).attr('src','resources/images/ancient/wsm890_reverse.png');
         $( "#obverse" ).attr('src','resources/images/ancient/wsm890_obverse.png');
         $( "#reverse" ).attr('src','resources/images/ancient/wsm890_reverse.png');
+        $( "#ngc" ).hide();
         selectView("#both");
     });
 
+    $( "#morgan" ).click(function( event ) {
+        $( "#main_title" ).html('1882-S Morgan Silver Dollar');
+        $( "#main_description" ).html('1882-S Morgan Silver Dollar. MS67 NGC. CAC. NGC Census: (1646/92). PCGS Population (736/43). (Registry values: P1, N991) (NGC ID# 254F, PCGS# 7140, <a href="http://secure.numismaster.com/ta/Coins.admin?rnd=KITTCIHZ&@impl=coins.ui.ucatalog.flat.coin.UiControl_ViewPriceGuideDetail&@prms=4b7261757365436f696e49643d3635322653656172636849643d33373833323834&@windowId=BISDM&Ext=login" target="_blank">KM#110</a>)');
+        $( "#small_obv" ).attr('src','resources/images/us/1882s_1dollar_obv.png');
+        $( "#small_rev" ).attr('src','resources/images/us/1882s_1dollar_rev.png');
+        $( "#obverse" ).attr('src','resources/images/us/1882s_1dollar_obv.png');
+        $( "#reverse" ).attr('src','resources/images/us/1882s_1dollar_rev.png');
+        $( "#ngc" ).html('NGC 3517588-005');
+        $( "#ngc" ).show();
+        $( "#obverse_slab" ).attr('src','resources/images/us/1882s_1dollar_slab_obv.png');
+        $( "#reverse_slab" ).attr('src','resources/images/us/1882s_1dollar_slab_rev.png');
+        selectView("#both");
+    });
 
+    $( "#wsm1137" ).click(function( event ) {
+        $( "#main_title" ).html('Seleucid Kingdom - Antiochus II Theos (261-246 BC)');
+        $( "#main_description" ).html('AR tetradrachm (26mm, 16.88 gm, 11h). Northern Mesopotamia. ca. 261-252 BC. Diademed head of Antiochus II right / BA&Sigma;I&Lambda;E&Omega;&Sigma; ANTIOXOY Apollo seated left on omphalos, examining arrow and resting hand on grounded bow, monograms in outer left and right fields. WSM 1137; SC 580.4; HGC 9. Boldly struck in choice metal from an obverse die of exceptional style and relief. NGC AU 5/5 - 4/5.' +
+            '<br/><br/></br.><i>In considering this issue, Newell noted the stylistic dependence on Antioch and settled on nearby Apamea as the probable mint. However, Le Rider (Antioche de Syrie) demonstrated a more plausible origin in Northern Mesopotamia, based on hoard evidence. Houghton and Lorber catalogue the origin as Uncertain Mint 30, probably in Northern Mesopotamia.</i>');
+        $( "#small_obv" ).attr('src','resources/images/ancient/wsm1137_obverse.png');
+        $( "#small_rev" ).attr('src','resources/images/ancient/wsm1137_reverse.png');
+        $( "#obverse" ).attr('src','resources/images/ancient/wsm1137_obverse.png');
+        $( "#reverse" ).attr('src','resources/images/ancient/wsm1137_reverse.png');
+        $( "#ngc" ).html('NGC 2021971-029');
+        $( "#ngc" ).show();
+        $( "#main_notes" ).html('In considering this issue, Newell noted the stylistic dependence on Antioch and settled on nearby Apamea as the probable mint. However, Le Rider (Antioche de Syrie) demonstrated a more plausible origin in Northern Mesopotamia, based on hoard evidence. Houghton and Lorber catalogue the origin as Uncertain Mint 30, probably in Northern Mesopotamia.');
+        $( "#main_notes" ).show();
+        $( "#obverse_slab" ).attr('src','resources/images/ancient/wsm1137_slab_obverse.png');
+        $( "#reverse_slab" ).attr('src','resources/images/ancient/wsm1137_slab_reverse.png');
+        selectView("#both");
+    });
 
 
 
