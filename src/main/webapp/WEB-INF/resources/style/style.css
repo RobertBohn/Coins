@@ -97,8 +97,10 @@ a:hover {
 }
 #both img {
     height:350px;
+    cursor: pointer;
 }
 #prices {
+    display:none;
     margin-top:80px;
 }
 #prices p {
@@ -112,24 +114,28 @@ a:hover {
     margin-top:30px;
     margin-left:20px;
     height:700px;
+    cursor: pointer;
 }
 #reverse {
     display:none;
     margin-top:30px;
     margin-left:20px;
     height:700px;
+    cursor: pointer;
 }
 #obverse_slab {
     display:none;
     margin-top:10px;
     margin-left:20px;
     width:700px;
+    cursor: pointer;
 }
 #reverse_slab {
     display:none;
     margin-top:10px;
     margin-left:20px;
     width:700px;
+    cursor: pointer;
 }
 .filler {
     height:300px;

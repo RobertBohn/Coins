@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head>
     <title>Coins</title>
-    <meta charset="UTF-8">
+    <meta charset="utf-8" />
     <link href="resources/style/style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -35,8 +35,8 @@
 
                     <h1>US Coins</h1>
                     <ul>
-                        <li><a href="#">$2½ Classic Head Quarter Eagle</a></li>
-                        <li><a href="#">$2½ Indian Quarter Eagle</a></li>
+                        <li><a href="#">$2&frac12; Classic Head Quarter Eagle</a></li>
+                        <li><a href="#">$2&frac12; Indian Quarter Eagle</a></li>
                         <li><a href="#">$5 Classic Head Half Eagle</a></li>
                         <li><a href="#">$5 Liberty Half Eagle</a></li>
                         <li><a href="#">$5 Indian Half Eagle</a></li>
@@ -53,11 +53,13 @@
                         <li><a href="#">Thracian Kingdom &bull; Lysimachus</a></li>
                         <li><a href="#">Ptolemaic Egypt &bull; Ptolemy I Soter</a></li>
                         <li><a href="#">Pergamene Kingdom &bull; Philetairos</a></li>
-                        <li><a href="#">Seleucid Kingdom &bull; Seleucus I Nicator</a></li>
+                        <li><a id="wsm890" href="#">Seleucid Kingdom &bull; Seleucus I Nicator</a></li>
                         <li><a href="#">Seleucid Kingdom &bull; Antiochus II Theos</a></li>
                     </ul>
                 </div> <!-- text_menu -->
 
+
+                <!--
                 <div id="image_menu">
                     <h1>Ancients</h1>
                     <ul>
@@ -65,7 +67,9 @@
                         <li><a href="#"><img src="resources/images/o1.png" /><img src="resources/images/r1.png" /></a></li>
                         <li><a href="#"><img src="resources/images/o1.png" /><img src="resources/images/r1.png" /></a></li>
                     </ul>
-                </div> <!-- image_menu -->
+                </div>
+                -->
+
 
                 <div class="filler"></div>
 
@@ -83,13 +87,14 @@
 
 
                 <div id="both">
-                    <img id="small_obv" src="resources/images/1904_us_20dollar_obv.png" />
-                    <img id="small_rev" src="resources/images/1904_us_20dollar_rev.png" />
+                    <img id="small_obv" src="resources/images/us/1882s_1dollar_obv.png" />
+                    <img id="small_rev" src="resources/images/us/1882s_1dollar_rev.png" />
 
-                    <h2>1904 $20 Liberty Double Eagle</h2>
+                    <h2 id="main_title">1882-S Morgan Silver Dollar</h2>
 
-                    <p>1904 $20 Liberty Double Eagle. 0.9675 AGW. NGC MS 62. <a href="http://secure.numismaster.com/ta/Coins.admin?rnd=TKYNCQLY&@impl=coins.ui.ucatalog.flat.coin.UiControl_ViewPriceGuideDetail&@prms=4b7261757365436f696e49643d313030322653656172636849643d33373830323037&@windowId=VTTGU&Ext=login" target="_blank">KM#74.3</a>. <a id="ngc" href="#">NGC 2627203-001</a>.</p>
-
+                    <p id="main_description">
+                        1882-S Morgan Silver Dollar. MS67 NGC. CAC. NGC Census: (1646/92). PCGS Population (736/43). (Registry values: P1, N991) (NGC ID# 254F, PCGS# 7140, <a href="http://secure.numismaster.com/ta/Coins.admin?rnd=KITTCIHZ&@impl=coins.ui.ucatalog.flat.coin.UiControl_ViewPriceGuideDetail&@prms=4b7261757365436f696e49643d3635322653656172636849643d33373833323834&@windowId=BISDM&Ext=login" target="_blank">KM#110</a>)
+                        <a id="ngc" href="#">NGC 3517588-005</a>.</p>
                     <div id="prices">
                         <p id="purchase">9/10/12 $1880 Purchased on Ebay</p>
                         <p>3/30/15 $1425 Sold on Ebay</p>
@@ -97,10 +102,10 @@
                 </div> <!-- both -->
 
 
-                <img id="obverse" src="resources/images/1904_us_20dollar_obv.png" />
-                <img id="reverse" src="resources/images/1904_us_20dollar_rev.png" />
-                <img id="obverse_slab" src="resources/images/1904_us_20dollar_slab_obv.png" />
-                <img id="reverse_slab" src="resources/images/1904_us_20dollar_slab_rev.png" />
+                <img id="obverse" src="resources/images/us/1882s_1dollar_obv.png" />
+                <img id="reverse" src="resources/images/us/1882s_1dollar_rev.png" />
+                <img id="obverse_slab" src="resources/images/us/1882s_1dollar_slab_obv.png" />
+                <img id="reverse_slab" src="resources/images/us/1882s_1dollar_slab_rev.png" />
 
                 <div class="filler"></div>
 
