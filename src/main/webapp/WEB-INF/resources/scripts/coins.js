@@ -60,13 +60,12 @@ $( document ).ready(function() {
 
     $( "#km602" ).click(function( event ) {
         $( "#main_title" ).html('German States &bull; Hamburg &bull; 1877-J &bull; 20 Mark');
-        $( "#main_description" ).html('German States: Hamburg Free City 20 Mark 1877-J. FREIE UND HANSESTADT HAMBURG Helmeted arms with lion supporters / DEUTSCHES REICH Crowned imperial eagle, type II. KM602, AGW 0.2305, XF/AU.');
+        $( "#main_description" ).html('German States: Free and Hanseatic City of Hamburg. 20 Mark 1877-J. Helmeted arms with lion supporters / Crowned imperial eagle, type II. KM602, AGW 0.2305, XF/AU.');
         $( "#small_obv" ).attr('src','http://www.barzutti.com/coins/images/world/km602_obverse.png');
         $( "#small_rev" ).attr('src','http://www.barzutti.com/coins/images/world/km602_reverse.png');
         $( "#obverse" ).attr('src','http://www.barzutti.com/coins/images/world/km602_obverse.png');
         $( "#reverse" ).attr('src','http://www.barzutti.com/coins/images/world/km602_reverse.png');
-        $( "#main_notes" ).html('The Free and Hanseatic City of Hamburg was founded by Charlemange in the 9th century. In 1241 it joined Lubeck to form the Hanseatic League. The mint right was leased to the citizens in 1292. In 1510 Hamburg was formally made a free imperial city of the Holy Roman Empire. In 1866 it joined the North German Confederation and became part of the German Empire in 1871. Hamburg coinage is almost continuous up to the time of World War I.');
-        $( "#main_notes" ).show();
+        $( "#main_notes" ).hide();
         $( "#ngc" ).hide();
         selectView("#both");
     });

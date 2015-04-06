@@ -87,8 +87,8 @@
 
 
                 <div id="both">
-                    <img id="small_obv" src="resources/images/us/1882s_1dollar_obv.png" />
-                    <img id="small_rev" src="resources/images/us/1882s_1dollar_rev.png" />
+                    <img id="small_obv" src="" />
+                    <img id="small_rev" src="" />
 
                     <h2 id="main_title">1882-S Morgan Silver Dollar</h2>
 
@@ -105,10 +105,10 @@
                 </div> <!-- both -->
 
 
-                <img id="obverse" src="resources/images/us/1882s_1dollar_obv.png" />
-                <img id="reverse" src="resources/images/us/1882s_1dollar_rev.png" />
-                <img id="obverse_slab" src="resources/images/us/1882s_1dollar_slab_obv.png" />
-                <img id="reverse_slab" src="resources/images/us/1882s_1dollar_slab_rev.png" />
+                <img id="obverse" src="" />
+                <img id="reverse" src="" />
+                <img id="obverse_slab" src="" />
+                <img id="reverse_slab" src="" />
 
 
 
