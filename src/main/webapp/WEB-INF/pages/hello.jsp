@@ -26,6 +26,7 @@
                         <li><a href="#">Great Britian &bull; George V &bull; 1 Sovereign</a></li>
                         <li><a href="#">Great Britian &bull; Edward VII &bull; 2 Sovereign</a></li>
                         <li><a href="#">Australia &bull; Victoria &bull; 1 Sovereign</a></li>
+                        <li><a id="km602" href="#">German States &bull; Hamburg &bull; 20 Mark</a></li>
                         <li><a href="#">USSR &bull; Chervonetz &bull; 10 Roubles</a></li>
                         <li><a href="#">France &bull; Napoleon &bull; 20 Francs</a></li>
                         <li><a href="#">France &bull; Napoleon &bull; 40 Francs</a></li>

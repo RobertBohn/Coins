@@ -57,6 +57,19 @@ $( document ).ready(function() {
         selectView("#both");
     });
 
+
+    $( "#km602" ).click(function( event ) {
+        $( "#main_title" ).html('German States &bull; Hamburg &bull; 1877-J &bull; 20 Mark');
+        $( "#main_description" ).html('German States: Hamburg Free City 20 Mark 1877-J. Helmeted arms with lion supporters / Description Reverse Crowned imperial eagle, type II. Legend Obverse: FREIE UND HANSESTADT HAMBURG / Legend Reverse: DEUTSCHES REICH. KM602, AGW 0.2305, XF/AU.');
+        $( "#small_obv" ).attr('src','resources/images/world/km602_obverse.png');
+        $( "#small_rev" ).attr('src','resources/images/world/km602_reverse.png');
+        $( "#obverse" ).attr('src','resources/images/world/km602_obverse.png');
+        $( "#reverse" ).attr('src','resources/images/world/km602_reverse.png');
+        $( "#ngc" ).hide();
+        selectView("#both");
+    });
+
+
     $( "#morgan" ).click(function( event ) {
         $( "#main_title" ).html('1882-S Morgan Silver Dollar');
         $( "#main_description" ).html('1882-S Morgan Silver Dollar. MS67 NGC. CAC. NGC Census: (1646/92). PCGS Population (736/43). (Registry values: P1, N991) (NGC ID# 254F, PCGS# 7140, <a href="http://secure.numismaster.com/ta/Coins.admin?rnd=KITTCIHZ&@impl=coins.ui.ucatalog.flat.coin.UiControl_ViewPriceGuideDetail&@prms=4b7261757365436f696e49643d3635322653656172636849643d33373833323834&@windowId=BISDM&Ext=login" target="_blank">KM#110</a>)');
