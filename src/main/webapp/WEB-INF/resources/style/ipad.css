@@ -8,25 +8,22 @@ body {
 h1 {
     font-size:12pt;
     text-decoration:none;
-    line-height:15px;
 }
 h2 {
     font-size:16pt;
 }
 p {
-    font-size:10pt;
+    font-size:11pt;
     text-decoration:none;
-    line-height:12px;
 }
 a {
+    font-size:11pt;
     color:#000000;
     text-decoration:none;
-    line-height:12px;
 }
 a:hover {
     color:#484848;
     text-decoration:none;
-    line-height:12px;
 }
 
 /* Start of Column CSS */
@@ -79,9 +76,6 @@ a:hover {
 #col2 h2 {
     text-align:center;
 }
-#text_menu a {
-    font-size:11pt;
-}
 #image_menu {
     display:none;
 }
@@ -93,16 +87,14 @@ a:hover {
     display:none;
     margin-top:15px;
     margin-left:10px;
+    width:600px;
 }
 #both img {
     height:280px;
     cursor:pointer;
 }
-#main_title {
-    padding-right:15px;
-}
-#main_description {
-    padding-right:15px;
+#main_notes {
+    font-style:italic;
 }
 #prices {
     display:none;

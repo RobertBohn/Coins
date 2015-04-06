@@ -2,7 +2,6 @@ $( document ).ready(function() {
 
     function selectView( view ) {
         $( "#both" ).hide();
-        $( "#main_notes" ).hide();
         $( "#obverse" ).hide();
         $( "#reverse" ).hide();
         $( "#obverse_slab" ).hide();
@@ -49,10 +48,11 @@ $( document ).ready(function() {
     $( "#wsm890" ).click(function( event ) {
         $( "#main_title" ).html('Seleucid Kingdom - Seleucus I Nicator (312-281 BC)');
         $( "#main_description" ).html('AR tetradrachm (17.08 gm). Seleuceia in Pieria, ca. 300-290 BC. Head of Herakles right wearing lion skin headdress / BA&Sigma;I&Lambda;E&Omega;&Sigma; &Sigma;E&Lambda;EYKOY Zeus enthroned left, holding Nike bearing wreath and scepter, monogram in left field and KP under throne. WSM 890. SC 29.1b. Toned Very Fine.');
-        $( "#small_obv" ).attr('src','resources/images/ancient/wsm890_obverse.png');
-        $( "#small_rev" ).attr('src','resources/images/ancient/wsm890_reverse.png');
-        $( "#obverse" ).attr('src','resources/images/ancient/wsm890_obverse.png');
-        $( "#reverse" ).attr('src','resources/images/ancient/wsm890_reverse.png');
+        $( "#small_obv" ).attr('src','http://www.barzutti.com/coins/images/ancient/wsm890_obverse.png');
+        $( "#small_rev" ).attr('src','http://www.barzutti.com/coins/images/ancient/wsm890_reverse.png');
+        $( "#obverse" ).attr('src','http://www.barzutti.com/coins/images/ancient/wsm890_obverse.png');
+        $( "#reverse" ).attr('src','http://www.barzutti.com/coins/images/ancient/wsm890_reverse.png');
+        $( "#main_notes" ).hide();
         $( "#ngc" ).hide();
         selectView("#both");
     });
@@ -60,11 +60,13 @@ $( document ).ready(function() {
 
     $( "#km602" ).click(function( event ) {
         $( "#main_title" ).html('German States &bull; Hamburg &bull; 1877-J &bull; 20 Mark');
-        $( "#main_description" ).html('German States: Hamburg Free City 20 Mark 1877-J. Helmeted arms with lion supporters / Description Reverse Crowned imperial eagle, type II. Legend Obverse: FREIE UND HANSESTADT HAMBURG / Legend Reverse: DEUTSCHES REICH. KM602, AGW 0.2305, XF/AU.');
-        $( "#small_obv" ).attr('src','resources/images/world/km602_obverse.png');
-        $( "#small_rev" ).attr('src','resources/images/world/km602_reverse.png');
-        $( "#obverse" ).attr('src','resources/images/world/km602_obverse.png');
-        $( "#reverse" ).attr('src','resources/images/world/km602_reverse.png');
+        $( "#main_description" ).html('German States: Hamburg Free City 20 Mark 1877-J. FREIE UND HANSESTADT HAMBURG Helmeted arms with lion supporters / DEUTSCHES REICH Crowned imperial eagle, type II. KM602, AGW 0.2305, XF/AU.');
+        $( "#small_obv" ).attr('src','http://www.barzutti.com/coins/images/world/km602_obverse.png');
+        $( "#small_rev" ).attr('src','http://www.barzutti.com/coins/images/world/km602_reverse.png');
+        $( "#obverse" ).attr('src','http://www.barzutti.com/coins/images/world/km602_obverse.png');
+        $( "#reverse" ).attr('src','http://www.barzutti.com/coins/images/world/km602_reverse.png');
+        $( "#main_notes" ).html('The Free and Hanseatic City of Hamburg was founded by Charlemange in the 9th century. In 1241 it joined Lubeck to form the Hanseatic League. The mint right was leased to the citizens in 1292. In 1510 Hamburg was formally made a free imperial city of the Holy Roman Empire. In 1866 it joined the North German Confederation and became part of the German Empire in 1871. Hamburg coinage is almost continuous up to the time of World War I.');
+        $( "#main_notes" ).show();
         $( "#ngc" ).hide();
         selectView("#both");
     });
@@ -73,31 +75,31 @@ $( document ).ready(function() {
     $( "#morgan" ).click(function( event ) {
         $( "#main_title" ).html('1882-S Morgan Silver Dollar');
         $( "#main_description" ).html('1882-S Morgan Silver Dollar. MS67 NGC. CAC. NGC Census: (1646/92). PCGS Population (736/43). (Registry values: P1, N991) (NGC ID# 254F, PCGS# 7140, <a href="http://secure.numismaster.com/ta/Coins.admin?rnd=KITTCIHZ&@impl=coins.ui.ucatalog.flat.coin.UiControl_ViewPriceGuideDetail&@prms=4b7261757365436f696e49643d3635322653656172636849643d33373833323834&@windowId=BISDM&Ext=login" target="_blank">KM#110</a>)');
-        $( "#small_obv" ).attr('src','resources/images/us/1882s_1dollar_obv.png');
-        $( "#small_rev" ).attr('src','resources/images/us/1882s_1dollar_rev.png');
-        $( "#obverse" ).attr('src','resources/images/us/1882s_1dollar_obv.png');
-        $( "#reverse" ).attr('src','resources/images/us/1882s_1dollar_rev.png');
+        $( "#small_obv" ).attr('src','http://www.barzutti.com/coins/images/us/1882s_1dollar_obv.png');
+        $( "#small_rev" ).attr('src','http://www.barzutti.com/coins/images/us/1882s_1dollar_rev.png');
+        $( "#obverse" ).attr('src','http://www.barzutti.com/coins/images/us/1882s_1dollar_obv.png');
+        $( "#reverse" ).attr('src','http://www.barzutti.com/coins/images/us/1882s_1dollar_rev.png');
         $( "#ngc" ).html('NGC 3517588-005');
         $( "#ngc" ).show();
-        $( "#obverse_slab" ).attr('src','resources/images/us/1882s_1dollar_slab_obv.png');
-        $( "#reverse_slab" ).attr('src','resources/images/us/1882s_1dollar_slab_rev.png');
+        $( "#main_notes" ).hide();
+        $( "#obverse_slab" ).attr('src','http://www.barzutti.com/coins/images/us/1882s_1dollar_slab_obv.png');
+        $( "#reverse_slab" ).attr('src','http://www.barzutti.com/coins/images/us/1882s_1dollar_slab_rev.png');
         selectView("#both");
     });
 
     $( "#wsm1137" ).click(function( event ) {
         $( "#main_title" ).html('Seleucid Kingdom - Antiochus II Theos (261-246 BC)');
-        $( "#main_description" ).html('AR tetradrachm (26mm, 16.88 gm, 11h). Northern Mesopotamia. ca. 261-252 BC. Diademed head of Antiochus II right / BA&Sigma;I&Lambda;E&Omega;&Sigma; ANTIOXOY Apollo seated left on omphalos, examining arrow and resting hand on grounded bow, monograms in outer left and right fields. WSM 1137; SC 580.4; HGC 9. Boldly struck in choice metal from an obverse die of exceptional style and relief. NGC AU 5/5 - 4/5.' +
-            '<br/><br/></br.><i>In considering this issue, Newell noted the stylistic dependence on Antioch and settled on nearby Apamea as the probable mint. However, Le Rider (Antioche de Syrie) demonstrated a more plausible origin in Northern Mesopotamia, based on hoard evidence. Houghton and Lorber catalogue the origin as Uncertain Mint 30, probably in Northern Mesopotamia.</i>');
-        $( "#small_obv" ).attr('src','resources/images/ancient/wsm1137_obverse.png');
-        $( "#small_rev" ).attr('src','resources/images/ancient/wsm1137_reverse.png');
-        $( "#obverse" ).attr('src','resources/images/ancient/wsm1137_obverse.png');
-        $( "#reverse" ).attr('src','resources/images/ancient/wsm1137_reverse.png');
+        $( "#main_description" ).html('AR tetradrachm (26mm, 16.88 gm, 11h). Northern Mesopotamia. ca. 261-252 BC. Diademed head of Antiochus II right / BA&Sigma;I&Lambda;E&Omega;&Sigma; ANTIOXOY Apollo seated left on omphalos, examining arrow and resting hand on grounded bow, monograms in outer left and right fields. WSM 1137; SC 580.4; HGC 9. Boldly struck in choice metal from an obverse die of exceptional style and relief. NGC AU 5/5 - 4/5.');
+        $( "#small_obv" ).attr('src','http://www.barzutti.com/coins/images/ancient/wsm1137_obverse.png');
+        $( "#small_rev" ).attr('src','http://www.barzutti.com/coins/images/ancient/wsm1137_reverse.png');
+        $( "#obverse" ).attr('src','http://www.barzutti.com/coins/images/ancient/wsm1137_obverse.png');
+        $( "#reverse" ).attr('src','http://www.barzutti.com/coins/images/ancient/wsm1137_reverse.png');
         $( "#ngc" ).html('NGC 2021971-029');
         $( "#ngc" ).show();
         $( "#main_notes" ).html('In considering this issue, Newell noted the stylistic dependence on Antioch and settled on nearby Apamea as the probable mint. However, Le Rider (Antioche de Syrie) demonstrated a more plausible origin in Northern Mesopotamia, based on hoard evidence. Houghton and Lorber catalogue the origin as Uncertain Mint 30, probably in Northern Mesopotamia.');
         $( "#main_notes" ).show();
-        $( "#obverse_slab" ).attr('src','resources/images/ancient/wsm1137_slab_obverse.png');
-        $( "#reverse_slab" ).attr('src','resources/images/ancient/wsm1137_slab_reverse.png');
+        $( "#obverse_slab" ).attr('src','http://www.barzutti.com/coins/images/ancient/wsm1137_slab_obverse.png');
+        $( "#reverse_slab" ).attr('src','http://www.barzutti.com/coins/images/ancient/wsm1137_slab_reverse.png');
         selectView("#both");
     });
 
