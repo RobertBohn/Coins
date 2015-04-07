@@ -70,6 +70,17 @@ $( document ).ready(function() {
         selectView("#both");
     });
 
+    $( "#km806" ).click(function( event ) {
+        $( "#main_title" ).html('Great Britain &bull; Edward VII &bull; 2 Pounds &bull; 1902');
+        $( "#main_description" ).html('Edward VII, 2 Pounds 1902, KM806, AGW 0.4710, XF.');
+        $( "#small_obv" ).attr('src','http://www.barzutti.com/coins/images/world/km806_obverse.png');
+        $( "#small_rev" ).attr('src','http://www.barzutti.com/coins/images/world/km806_reverse.png');
+        $( "#obverse" ).attr('src','http://www.barzutti.com/coins/images/world/km806_obverse.png');
+        $( "#reverse" ).attr('src','http://www.barzutti.com/coins/images/world/km806_reverse.png');
+        $( "#main_notes" ).hide();
+        $( "#ngc" ).hide();
+        selectView("#both");
+    });
 
     $( "#morgan" ).click(function( event ) {
         $( "#main_title" ).html('1882-S Morgan Silver Dollar');

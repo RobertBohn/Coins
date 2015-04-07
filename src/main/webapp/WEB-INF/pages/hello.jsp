@@ -24,7 +24,7 @@
                         <li><a href="#">Russia &bull; Nicholas II &bull; 15 Roubles</a></li>
                         <li><a href="#">Great Britain &bull; Victoria &bull; 5 Sovereign</a></li>
                         <li><a href="#">Great Britian &bull; George V &bull; 1 Sovereign</a></li>
-                        <li><a href="#">Great Britian &bull; Edward VII &bull; 2 Sovereign</a></li>
+                        <li><a id="km806" href="#">Great Britian &bull; Edward VII &bull; 2 Pounds</a></li>
                         <li><a href="#">Australia &bull; Victoria &bull; 1 Sovereign</a></li>
                         <li><a id="km602" href="#">German States &bull; Hamburg &bull; 20 Mark</a></li>
                         <li><a href="#">USSR &bull; Chervonetz &bull; 10 Roubles</a></li>
