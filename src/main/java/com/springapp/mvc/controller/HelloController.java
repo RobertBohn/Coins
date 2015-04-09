@@ -1,5 +1,8 @@
 package com.springapp.mvc.controller;
 
+import com.springapp.mvc.data.CoinDao;
+import com.springapp.mvc.model.Coin;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -12,16 +15,13 @@ import java.util.List;
 @RequestMapping("/")
 public class HelloController {
 
+    @Autowired
+    CoinDao coinDao;
+
 	@RequestMapping(method = RequestMethod.GET)
 	public String printWelcome(ModelMap model) {
-        List<String> names = new ArrayList<String>();
-        names.add("Bob");
-        names.add("Brian");
-        names.add("Shawn");
-
-        model.addAttribute("message", "Hello world!");
-        model.addAttribute("names", names);
-
+        List<Coin> coins = coinDao.getCoins();
+        model.addAttribute("coins", coins);
         return "hello";
 	}
 }
