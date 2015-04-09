@@ -7,23 +7,19 @@ body {
 }
 h1 {
     font-size:14pt;
-    text-decoration:none;
 }
 h2 {
     font-size:18pt;
 }
 p {
     font-size:12pt;
-    text-decoration:none;
 }
 a {
     color:#000000;
-    font-size:12pt;
     text-decoration:none;
 }
 a:hover {
     color:#484848;
-    text-decoration:none;
 }
 
 /* Start of Column CSS */
@@ -69,14 +65,8 @@ a:hover {
     margin:0;
     padding:0;
 }
-#col1 img {
-    margin-right:5px;
-    height:80px;
-}
 #col2 h2 {
     text-align:center;
-}
-#text_menu {
 }
 #image_menu {
     display:none;
