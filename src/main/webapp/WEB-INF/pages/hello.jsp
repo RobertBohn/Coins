@@ -62,18 +62,6 @@
                 </div> <!-- text_menu -->
 
 
-                <!--
-                <div id="image_menu">
-                    <h1>Ancients</h1>
-                    <ul>
-                        <li><a href="#"><img src="resources/images/o1.png" /><img src="resources/images/r1.png" /></a></li>
-                        <li><a href="#"><img src="resources/images/o1.png" /><img src="resources/images/r1.png" /></a></li>
-                        <li><a href="#"><img src="resources/images/o1.png" /><img src="resources/images/r1.png" /></a></li>
-                    </ul>
-                </div>
-                -->
-
-
                 <div class="filler"></div>
 
 
@@ -105,14 +93,13 @@
                 </div> <!-- both -->
 
 
-                <img id="obverse" src="" />
-                <img id="reverse" src="" />
-                <img id="obverse_slab" src="" />
-                <img id="reverse_slab" src="" />
+                <img id="obverse" />
+                <img id="reverse" />
+                <img id="obverse_slab" />
+                <img id="reverse_slab" />
 
 
-
-                <div class="filler"></div>
+                <div class="filler" />
 
 
 

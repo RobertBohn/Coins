@@ -18,7 +18,7 @@ $( document ).ready(function() {
     });
 
     $( "#obverse" ).click(function( event ) {
-        selectView("#reverse");
+        selectView("#both");
     });
 
     $( "#reverse" ).click(function( event ) {
