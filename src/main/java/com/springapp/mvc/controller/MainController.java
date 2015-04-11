@@ -10,8 +10,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import java.util.List;
-
 @Controller
 @RequestMapping("/")
 public class MainController {
@@ -19,14 +17,16 @@ public class MainController {
     @Autowired
     CoinDao coinDao;
 
-	@RequestMapping(method = RequestMethod.GET)
-	public String printWelcome(ModelMap model) {
+    @RequestMapping(method = RequestMethod.GET)
+    public String list(ModelMap model) {
         model.addAttribute("coins", coinDao.getCoins());
         return "main";
-	}
+    }
 
-    @RequestMapping(value="coin/{id}", method = RequestMethod.GET)
-    public @ResponseBody Coin getShopInJSON(@PathVariable String id) {
+    @RequestMapping(value = "coin/{id}", method = RequestMethod.GET)
+    public
+    @ResponseBody
+    Coin get(@PathVariable String id) {
         return coinDao.get(id);
     }
 }
