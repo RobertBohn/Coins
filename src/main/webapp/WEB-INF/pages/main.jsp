@@ -3,7 +3,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head>
     <title>Coins</title>
-    <meta charset="utf-8" />
     <link rel="stylesheet" media="all and (min-device-width: 992px)" href="resources/style/desktop.css">
     <link rel="stylesheet" media="all and (min-device-width: 481px) and (max-device-width: 1024px)" href="resources/style/ipad.css">
 </head>
@@ -18,8 +17,25 @@
             <div id="col1">
                 <!-- Column one start -->
 
-
                 <div id="text_menu">
+
+                    <c:set var="category" value=""/>
+                    <c:forEach items="${coins}" var="coin">
+                        <c:if test = "${coin.type != category}">
+                            <c:if test = "${category != ''}">
+                                </ul>
+                            </c:if>
+                            <h1>${coin.type}</h1><ul>
+                            <c:set var="category" value="${coin.type}"/>
+                        </c:if>
+                        <li><a href="/coin/${coin.id}">${coin.menu}</a></li>
+                    </c:forEach>
+                    </ul>
+
+
+
+
+
                     <h1>World Coins</h1>
                     <ul>
                         <li><a href="#">Russia &bull; Nicholas II &bull; 15 Roubles</a></li>
@@ -35,7 +51,6 @@
                         <li><a href="#">Swiss &bull; Helvetia &bull; 20 Francs</a></li>
                         <li><a href="#">Belgium &bull; Albert I &bull; 20 Francs</a></li>
                     </ul>
-
                     <h1>US Coins</h1>
                     <ul>
                         <li><a id="morgan" href="#">1882-S Morgan Silver Dollar</a></li>
@@ -49,7 +64,6 @@
                         <li><a href="#">$20 Liberty Double Eagle</a></li>
                         <li><a href="#">$20 St Gaudens Double Eagle</a></li>
                     </ul>
-
                     <h1>Ancients</h1>
                     <ul>
                         <li><a href="#">Attica &bull; Athens</a></li>
@@ -59,13 +73,9 @@
                         <li><a href="#">Pergamene Kingdom &bull; Philetairos</a></li>
                         <li><a id="wsm890" href="#">Seleucid Kingdom &bull; Seleucus I Nicator</a></li>
                         <li><a id="wsm1137" href="#">Seleucid Kingdom &bull; Antiochus II Theos</a></li>
-
-                        <c:forEach items="${coins}" var="coin">
-                            <li>${coin.menu}</li>
-                        </c:forEach>
-
-
                     </ul>
+
+
                 </div> <!-- text_menu -->
 
 
