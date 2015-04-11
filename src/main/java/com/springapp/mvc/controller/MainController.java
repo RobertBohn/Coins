@@ -21,8 +21,7 @@ public class MainController {
 
 	@RequestMapping(method = RequestMethod.GET)
 	public String printWelcome(ModelMap model) {
-        List<Coin> coins = coinDao.getCoins();
-        model.addAttribute("coins", coins);
+        model.addAttribute("coins", coinDao.getCoins());
         return "main";
 	}
 

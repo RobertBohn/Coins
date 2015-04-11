@@ -18,8 +18,6 @@ public class CoinDao {
 
     private AmazonDynamoDBClient dynamoDBClient;
 
-    private static Logger logger = Logger.getLogger(CoinDao.class);
-
     @Autowired
     private Properties properties;
 
@@ -35,8 +33,7 @@ public class CoinDao {
         ScanRequest scanRequest = new ScanRequest("coins");
         ScanResult scanResult = dynamoDBClient.scan(scanRequest);
         for (int i = 0; i < scanResult.getCount(); i++) {
-            HashMap<String, AttributeValue> item = (HashMap<String, AttributeValue>) scanResult.getItems().get(i);
-            list.add(Coin.getInstance(item));
+            list.add(Coin.getInstance((HashMap<String, AttributeValue>) scanResult.getItems().get(i)));
         }
         Collections.sort(list);
         return list;
