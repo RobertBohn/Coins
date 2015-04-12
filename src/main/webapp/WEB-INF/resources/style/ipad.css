@@ -7,14 +7,12 @@ body {
 }
 h1 {
     font-size:12pt;
-    text-decoration:none;
 }
 h2 {
     font-size:16pt;
 }
 p {
     font-size:11pt;
-    text-decoration:none;
 }
 a {
     font-size:11pt;
@@ -23,7 +21,6 @@ a {
 }
 a:hover {
     color:#484848;
-    text-decoration:none;
 }
 
 /* Start of Column CSS */
@@ -69,36 +66,23 @@ a:hover {
     margin:0;
     padding:0;
 }
-#col1 img {
-    margin-right:5px;
-    height:80px;
-}
 #col2 h2 {
     text-align:center;
 }
-#image_menu {
-    display:none;
-}
-#image_menu h1 {
-    display:none;
-    margin-left:10px;
-}
-#both {
-    display:none;
+#basic {
     margin-top:15px;
     margin-left:10px;
-    width:600px;
 }
-#both img {
+#basic img {
     height:280px;
     cursor:pointer;
 }
-#main_notes {
+#notes {
     font-style:italic;
 }
 #prices {
     display:none;
-    margin-top:60px;
+    margin-top:80px;
 }
 #prices p {
     margin: 0;
@@ -107,33 +91,29 @@ a:hover {
     padding-bottom:10px;
 }
 #obverse {
-    display:none;
     margin-top:15px;
     margin-left:10px;
     height:550px;
-    cursor: pointer;
+    cursor:pointer;
 }
 #reverse {
-    display:none;
     margin-top:15px;
     margin-left:10px;
     height:550px;
-    cursor: pointer;
+    cursor:pointer;
 }
 #obverse_slab {
-    display:none;
     margin-top:10px;
     margin-left:10px;
-    width:450px;
-    cursor: pointer;
+    width:550px;
+    cursor:pointer;
 }
 #reverse_slab {
-    display:none;
     margin-top:10px;
     margin-left:10px;
-    width:450px;
-    cursor: pointer;
+    width:550px;
+    cursor:pointer;
 }
 .filler {
-    height:300px;
+    height:700px;
 }
