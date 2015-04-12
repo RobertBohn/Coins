@@ -68,23 +68,15 @@ a:hover {
 #col2 h2 {
     text-align:center;
 }
-#image_menu {
-    display:none;
-}
-#image_menu h1 {
-    display:none;
-    margin-left:20px;
-}
-#both {
-    display:none;
+#basic {
     margin-top:30px;
     margin-left:20px;
 }
-#both img {
+#basic img {
     height:350px;
     cursor:pointer;
 }
-#main_notes {
+#notes {
     font-style:italic;
 }
 #prices {
@@ -98,33 +90,29 @@ a:hover {
     padding-bottom:10px;
 }
 #obverse {
-    display:none;
     margin-top:30px;
-    margin-left:20px;
+    margin-left:10px;
     height:700px;
-    cursor: pointer;
+    cursor:pointer;
 }
 #reverse {
-    display:none;
     margin-top:30px;
-    margin-left:20px;
+    margin-left:10px;
     height:700px;
-    cursor: pointer;
+    cursor:pointer;
 }
 #obverse_slab {
-    display:none;
     margin-top:10px;
     margin-left:20px;
     width:700px;
-    cursor: pointer;
+    cursor:pointer;
 }
 #reverse_slab {
-    display:none;
     margin-top:10px;
     margin-left:20px;
     width:700px;
-    cursor: pointer;
+    cursor:pointer;
 }
 .filler {
-    height:300px;
+    height:700px;
 }

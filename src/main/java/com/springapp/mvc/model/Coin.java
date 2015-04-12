@@ -11,11 +11,11 @@ public class Coin implements Comparable<Coin> {
     private String title;
     private String description;
     private String notes;
+    private String certified;
     private String obverse;
     private String reverse;
     private String slab_obverse;
     private String slab_reverse;
-
 
     public String getId() {
         return id;
@@ -65,6 +65,14 @@ public class Coin implements Comparable<Coin> {
         this.notes = notes;
     }
 
+    public String getCertified() {
+        return certified;
+    }
+
+    public void setCertified(String certified) {
+        this.certified = certified;
+    }
+
     public String getObverse() {
         return obverse;
     }
@@ -111,6 +119,7 @@ public class Coin implements Comparable<Coin> {
         coin.setSlab_obverse(item.get("slab_obverse") == null ? null : item.get("slab_obverse").getS());
         coin.setSlab_reverse(item.get("slab_reverse") == null ? null : item.get("slab_reverse").getS());
         coin.setNotes(item.get("notes") == null ? null : item.get("notes").getS());
+        coin.setCertified(item.get("certified") == null ? null : item.get("certified").getS());
 
         return coin;
     }

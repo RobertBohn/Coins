@@ -17,16 +17,16 @@ public class MainController {
     @Autowired
     CoinDao coinDao;
 
-    @RequestMapping(method = RequestMethod.GET)
-    public String list(ModelMap model) {
-        model.addAttribute("coins", coinDao.getCoins());
-        return "main";
-    }
-
-    @RequestMapping(value = "coin/{id}", method = RequestMethod.GET)
+    @RequestMapping(value = "{id}", method = RequestMethod.GET)
     public
     @ResponseBody
     Coin get(@PathVariable String id) {
         return coinDao.get(id);
+    }
+
+    @RequestMapping("*")
+    public String list(ModelMap model) {
+        model.addAttribute("coins", coinDao.getCoins());
+        return "main";
     }
 }
