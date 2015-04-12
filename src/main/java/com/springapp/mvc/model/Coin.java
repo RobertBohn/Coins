@@ -11,6 +11,7 @@ public class Coin implements Comparable<Coin> {
     private String title;
     private String description;
     private String notes;
+    private Double denomination;
     private String certified;
     private String obverse;
     private String reverse;
@@ -63,6 +64,14 @@ public class Coin implements Comparable<Coin> {
 
     public void setNotes(String notes) {
         this.notes = notes;
+    }
+
+    public Double getDenomination() {
+        return denomination;
+    }
+
+    public void setDenomination(Double denomination) {
+        this.denomination = denomination;
     }
 
     public String getCertified() {
@@ -120,6 +129,7 @@ public class Coin implements Comparable<Coin> {
         coin.setSlab_reverse(item.get("slab_reverse") == null ? null : item.get("slab_reverse").getS());
         coin.setNotes(item.get("notes") == null ? null : item.get("notes").getS());
         coin.setCertified(item.get("certified") == null ? null : item.get("certified").getS());
+        coin.setDenomination(item.get("denomination") == null ? null : Double.parseDouble(item.get("denomination").getN()));
 
         return coin;
     }
@@ -127,8 +137,20 @@ public class Coin implements Comparable<Coin> {
     @Override
     public int compareTo(Coin o) {
         if (this.getType().equals(o.getType())) {
-            return this.getMenu().compareTo(o.getMenu());
+            if (this.getType().equals("US Coins")) {
+                if (this.getDenomination().equals(o.getDenomination())) {
+                    // same type and US and same denomination - sort by menu text 
+                   return this.getMenu().compareTo(o.getMenu());
+                } else {
+                    // same type and US - sort by denomination
+                    return this.getDenomination().compareTo(o.getDenomination());
+                }
+            } else {
+                // same type, non US - sort by menu text
+                return this.getMenu().compareTo(o.getMenu());
+            }
         } else {
+            // different type - sort by type descending
             return o.getType().compareTo(this.getType());
         }
     }
