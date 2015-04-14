@@ -6,7 +6,7 @@
     <link rel="stylesheet" media="all and (min-device-width: 992px)" href="resources/style/desktop.css">
     <link rel="stylesheet" media="all and (min-device-width: 481px) and (max-device-width: 1024px)" href="resources/style/ipad.css">
 </head>
-<body ng-controller="PageController as page">
+<body ng-controller="PageController as page" ng-init="page.init()">
 
 <div id="container2">
     <div id="content">

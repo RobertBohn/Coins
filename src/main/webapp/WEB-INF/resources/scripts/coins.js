@@ -4,6 +4,12 @@
 
     app.controller('PageController', function($scope, $http) {
 
+        this.init = function() {
+            alert('initing');
+        };
+
+
+
         this.coin = {};
 
         this.setCoin = function(id){
