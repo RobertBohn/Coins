@@ -40,13 +40,9 @@
                 <div id="basic" ng-show="page.isSet('basic')">
                     <img id="small_obv" ng-src="{{page.coin.obverse}}" ng-click="page.setView('obverse')" />
                     <img id="small_rev" ng-src="{{page.coin.reverse}}" ng-click="page.setView('reverse')" />
-
                     <h2 id="title">{{page.coin.title}}</h2>
-
                     <p id="description">{{page.coin.description}}</p>
-
                     <p id="notes">{{page.coin.notes}}</p>
-
                     <a id="certified" href="" ng-click="page.setView('obverse_slab')">{{page.coin.certified}}</a>
 
                     <div id="prices">
