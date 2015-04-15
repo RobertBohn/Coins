@@ -4,7 +4,7 @@
 
     app.controller('PageController', function($scope, $http) {
 
-        // manage coin list
+        // coin list
 
         this.coins = [];
 

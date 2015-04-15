@@ -15,31 +15,13 @@
             <div id="col1"> <!-- Column one start -->
 
                 <div id="menu">
-
-
                     <div ng-repeat="heading in page.headings">
                         <h1>{{heading}}</h1>
-                        <ul>
-
+                        <ul ng-repeat="coin in page.coins | filter: { type: heading }">
+                            <li><a href="" ng-click="page.setCoin(coin.id)">{{coin.menu}}</a></li>
                         </ul>
                     </div>
-
-
-
-                    <c:set var="category" value=""/>
-                    <c:forEach items="${coins}" var="coin">
-                        <c:if test = "${coin.type != category}">
-                            <c:if test = "${category != ''}">
-                                </ul>
-                            </c:if>
-                            <h1>${coin.type}</h1><ul>
-                            <c:set var="category" value="${coin.type}"/>
-                        </c:if>
-                        <li><a href="" ng-click="page.setCoin(${coin.id})">${coin.menu}</a></li>
-                    </c:forEach>
-                    </ul>
-
-                </div> <!-- menu -->
+                </div>
 
                 <div class="filler"></div>
 
