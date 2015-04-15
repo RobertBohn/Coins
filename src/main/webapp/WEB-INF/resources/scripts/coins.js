@@ -14,6 +14,10 @@
             });
         };
 
+        // headings
+
+        this.headings = ["World Coins", "US Coins", "Ancients"];
+
         // manage which coin
 
         this.coin = {};
