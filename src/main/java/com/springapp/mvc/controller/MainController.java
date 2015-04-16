@@ -30,8 +30,7 @@ public class MainController {
     }
 
     @RequestMapping("*")
-    public String list(ModelMap model) {
-        model.addAttribute("coins", coinDao.getCoins());
+    public String main() {
         return "main";
     }
 }
