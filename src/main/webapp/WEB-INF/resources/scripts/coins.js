@@ -10,6 +10,14 @@
 
         this.init = function() {
             $http.get('list').success(function(data, status, headers, config) {
+                // populate headings first
+                var current = "";
+                for (i=0; i<data.length; i++) {
+                    if (current != data[i].type) {
+                        $scope.page.headings.push(data[i].type);
+                        current = data[i].type;
+                    }
+                }
                 $scope.page.coins = data;
             });
         };
@@ -17,17 +25,6 @@
         // headings
 
         this.headings = [];
-
-        this.getHeadings = function() {
-            var current = "";
-            for (i=0; i<this.coins.length; i++) {
-                if (current != this.coins[i].type) {
-                    this.headings.push(this.coins[i].type);
-                    current = this.coins[i].type;
-                }
-            }
-            return this.headings;
-        };
 
         // current coin
 

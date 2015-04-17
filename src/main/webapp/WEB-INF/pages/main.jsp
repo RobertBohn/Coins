@@ -15,7 +15,7 @@
             <div id="col1"> <!-- Column one start -->
 
                 <div id="menu">
-                    <div ng-repeat="heading in page.getHeadings()">
+                    <div ng-repeat="heading in page.headings">
                         <h1>{{heading}}</h1>
                         <ul ng-repeat="coin in page.coins | filter: { type: heading }">
                             <li><a href="" ng-click="page.setCoin(coin.id)">{{coin.menu}}</a></li>
@@ -47,6 +47,7 @@
                 <img id="reverse" ng-src="{{page.coin.reverse}}" ng-show="page.isSet('reverse')" ng-click="page.setView('basic')" />
                 <img id="obverse_slab" ng-src="{{page.coin.slab_obverse}}" ng-show="page.isSet('obverse_slab')" ng-click="page.setView('reverse_slab')" />
                 <img id="reverse_slab" ng-src="{{page.coin.slab_reverse}}" ng-show="page.isSet('reverse_slab')" ng-click="page.setView('basic')" />
+
                 <div class="filler" />
 
             </div> <!-- Column two end -->
