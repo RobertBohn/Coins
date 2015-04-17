@@ -16,9 +16,20 @@
 
         // headings
 
-        this.headings = ["World Coins", "US Coins", "Ancients"];
+        this.headings = [];
 
-        // manage which coin
+        this.getHeadings = function() {
+            var current = "";
+            for (i=0; i<this.coins.length; i++) {
+                if (current != this.coins[i].type) {
+                    this.headings.push(this.coins[i].type);
+                    current = this.coins[i].type;
+                }
+            }
+            return this.headings;
+        };
+
+        // current coin
 
         this.coin = {};
 
@@ -32,7 +43,7 @@
             }
         };
 
-        // manage which view
+        // current view
 
         this.view = 'none';
 

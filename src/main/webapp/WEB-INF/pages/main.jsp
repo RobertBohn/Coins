@@ -15,7 +15,7 @@
             <div id="col1"> <!-- Column one start -->
 
                 <div id="menu">
-                    <div ng-repeat="heading in page.headings">
+                    <div ng-repeat="heading in page.getHeadings()">
                         <h1>{{heading}}</h1>
                         <ul ng-repeat="coin in page.coins | filter: { type: heading }">
                             <li><a href="" ng-click="page.setCoin(coin.id)">{{coin.menu}}</a></li>
