@@ -10,15 +10,16 @@
 
         this.init = function() {
             $http.get('list').success(function(data, status, headers, config) {
-                // populate headings first
                 var current = "";
+                var types = [];
                 for (i=0; i<data.length; i++) {
                     if (current != data[i].type) {
-                        $scope.page.headings.push(data[i].type);
+                        types.push(data[i].type);
                         current = data[i].type;
                     }
                 }
                 $scope.page.coins = data;
+                $scope.page.headings = types;
             });
         };
 
