@@ -11,6 +11,7 @@ public class Coin implements Comparable<Coin> {
     private String title;
     private String description;
     private String notes;
+    private Integer date;
     private Double denomination;
     private String certified;
     private String obverse;
@@ -68,6 +69,14 @@ public class Coin implements Comparable<Coin> {
 
     public Double getDenomination() {
         return denomination;
+    }
+
+    public Integer getDate() {
+        return date;
+    }
+
+    public void setDate(Integer date) {
+        this.date = date;
     }
 
     public void setDenomination(Double denomination) {
@@ -130,28 +139,30 @@ public class Coin implements Comparable<Coin> {
         coin.setNotes(item.get("notes") == null ? null : item.get("notes").getS());
         coin.setCertified(item.get("certified") == null ? null : item.get("certified").getS());
         coin.setDenomination(item.get("denomination") == null ? null : Double.parseDouble(item.get("denomination").getN()));
+        coin.setDate(item.get("date") == null ? null : Integer.parseInt(item.get("date").getN()));
 
         return coin;
     }
 
     @Override
     public int compareTo(Coin o) {
-        if (this.getType().equals(o.getType())) {
-            if (this.getType().equals("US Coins")) {
-                if (this.getDenomination().equals(o.getDenomination())) {
-                    // same type and US and same denomination - sort by menu text 
-                   return this.getMenu().compareTo(o.getMenu());
-                } else {
-                    // same type and US - sort by denomination
-                    return this.getDenomination().compareTo(o.getDenomination());
-                }
-            } else {
-                // same type, non US - sort by menu text
-                return this.getMenu().compareTo(o.getMenu());
-            }
-        } else {
-            // different type - sort by type descending
+        // different type - sort by type descending
+        if (this.getType().equals(o.getType())==false) {
             return o.getType().compareTo(this.getType());
         }
+        // non US - sort by menu text
+        if (this.getType().equals("US Coins")==false) {
+            return this.getMenu().compareTo(o.getMenu());
+        }
+        // US - order by denomination first
+        if (this.getDenomination().equals(o.getDenomination())==false) {
+            return this.getDenomination().compareTo(o.getDenomination());
+        }
+        // then by date
+        if (this.getDate().equals(o.getDate())==false) {
+            return this.getDate().compareTo(o.getDate());
+        }
+        // finally by menu text
+        return this.getMenu().compareTo(o.getMenu());
     }
 }
