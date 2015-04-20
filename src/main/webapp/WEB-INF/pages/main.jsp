@@ -38,8 +38,10 @@
                     <a id="certified" href="" ng-click="page.setView('obverse_slab')">{{page.coin.certified}}</a>
 
                     <div id="prices">
-                        <p id="purchase">9/10/12 $1880 Purchased on Ebay</p>
-                        <p>3/30/15 $1425 Sold on Ebay</p>
+                        <p id="purchase">12/19/13 $3300 Purchased, Heritage Auctions</p>
+                        <p>9/8/14 $4400 Heritage Auctions</p>
+                        <p>1/4/14 $4935 Heritage Auctions</p>
+                        <p>1/8/15 $4000 Heritage Auctions</p>
                     </div>
                 </div>
 
