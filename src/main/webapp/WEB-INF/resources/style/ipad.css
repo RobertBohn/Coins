@@ -40,7 +40,7 @@ a:hover {
     width:100%;
     position:relative;
     right:70%;
-    min-height:1100px;
+    min-height:800px;
     background:#3c9ccc; /* column 1 background colour */
 }
 #col1 {
@@ -73,6 +73,7 @@ a:hover {
 #basic {
     margin-top:15px;
     margin-left:10px;
+    margin-right:15px;
 }
 #basic img {
     height:280px;
