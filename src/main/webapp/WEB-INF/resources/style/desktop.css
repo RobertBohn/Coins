@@ -77,8 +77,12 @@ a:hover {
     height:350px;
     cursor:pointer;
 }
+#description {
+    text-align:justify;
+}
 #notes {
     font-style:italic;
+    text-align:justify;
 }
 #purchase {
     padding-bottom:10px;
