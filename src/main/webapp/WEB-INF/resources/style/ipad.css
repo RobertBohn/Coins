@@ -40,6 +40,7 @@ a:hover {
     width:100%;
     position:relative;
     right:70%;
+    min-height:1100px;
     background:#3c9ccc; /* column 1 background colour */
 }
 #col1 {
@@ -80,13 +81,6 @@ a:hover {
 #notes {
     font-style:italic;
 }
-#prices {
-    display:none;
-    margin-top:80px;
-}
-#prices p {
-    margin: 0;
-}
 #purchase {
     padding-bottom:10px;
 }
@@ -113,7 +107,4 @@ a:hover {
     margin-left:10px;
     width:550px;
     cursor:pointer;
-}
-.filler {
-    height:700px;
 }

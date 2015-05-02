@@ -40,7 +40,7 @@ public class CoinDao {
     }
 
     public Coin get(String id) {
-        GetItemRequest request = new GetItemRequest().withTableName("coins").addKeyEntry("id", new AttributeValue(id) );
+        GetItemRequest request = new GetItemRequest().withTableName("coins").addKeyEntry("id", new AttributeValue(id));
         GetItemResult result = dynamoDBClient.getItem(request);
         return Coin.getInstance((HashMap<String, AttributeValue>) result.getItem());
     }
