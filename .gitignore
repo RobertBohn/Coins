@@ -5,6 +5,4 @@ null
 .settings
 .idea/
 *.iml
-*.png
-*.jpg
 config.properties

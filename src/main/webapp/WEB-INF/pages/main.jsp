@@ -3,6 +3,8 @@
 <html ng-app="coins">
 <head>
     <title>Coins</title>
+    <link rel="icon" href="resources/images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="resources/images/apple-touch-icon.png">
     <link rel="stylesheet" media="all and (min-device-width: 992px)" href="resources/style/desktop.css">
     <link rel="stylesheet" media="all and (min-device-width: 481px) and (max-device-width: 1024px)" href="resources/style/ipad.css">
 </head>
