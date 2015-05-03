@@ -13,7 +13,6 @@ import java.util.Properties;
 @Configuration
 @Import({ CoinDao.class })
 public class AppConfig {
-
     @Bean
     Properties properties() throws IOException {
         PropertiesFactoryBean propertiesFactoryBean = new PropertiesFactoryBean();

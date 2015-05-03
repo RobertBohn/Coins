@@ -20,7 +20,6 @@ public class CoinDao {
     private AmazonDynamoDBClient dynamoDBClient;
 
     @Autowired
-    @Qualifier("properties")
     private Properties properties;
 
     @PostConstruct
