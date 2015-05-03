@@ -8,6 +8,7 @@ import com.amazonaws.services.dynamodbv2.model.*;
 import com.springapp.mvc.model.Coin;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
@@ -19,6 +20,7 @@ public class CoinDao {
     private AmazonDynamoDBClient dynamoDBClient;
 
     @Autowired
+    @Qualifier("properties")
     private Properties properties;
 
     @PostConstruct
