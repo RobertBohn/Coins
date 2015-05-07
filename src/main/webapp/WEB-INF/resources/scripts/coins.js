@@ -6,13 +6,15 @@
 
         // coin list
 
+        this.headings = [];
+
         this.coins = [];
 
         this.init = function() {
-            $http.get('list').success(function(data, status, headers, config) {
+            $http.get('list').success(function(data) {
                 var current = "";
                 var types = [];
-                for (i=0; i<data.length; i++) {
+                for (var i=0; i<data.length; i++) {
                     if (current != data[i].type) {
                         types.push(data[i].type);
                         current = data[i].type;
@@ -23,16 +25,12 @@
             });
         };
 
-        // headings
-
-        this.headings = [];
-
         // current coin
 
         this.coin = {};
 
         this.setCoin = function(id) {
-            for (i=0; i<this.coins.length; i++) {
+            for (var i=0; i<this.coins.length; i++) {
                 if (id == this.coins[i].id) {
                     this.coin = this.coins[i];
                     this.view = 'basic';

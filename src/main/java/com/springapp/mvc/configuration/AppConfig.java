@@ -16,7 +16,6 @@ public class AppConfig {
     @Bean
     Properties properties() throws IOException {
         PropertiesFactoryBean propertiesFactoryBean = new PropertiesFactoryBean();
-        propertiesFactoryBean.setIgnoreResourceNotFound(false);
         propertiesFactoryBean.setLocation(new ClassPathResource("config.properties"));
         propertiesFactoryBean.afterPropertiesSet();
         return propertiesFactoryBean.getObject();
